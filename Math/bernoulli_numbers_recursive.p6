@@ -10,6 +10,8 @@
 # See: https://en.wikipedia.org/wiki/Bernoulli_number#Recursive_definition
 #      https://en.wikipedia.org/wiki/Binomial_coefficient#Recursive_formula
 
+use experimental :cached;
+
 sub binomial($n, $k) is cached {
     $k == 0 || $n == $k ?? 1 !! binomial($n-1, $k-1) + binomial($n-1, $k);
 }

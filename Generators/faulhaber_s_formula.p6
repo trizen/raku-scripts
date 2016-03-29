@@ -15,6 +15,8 @@
 # To simplify the formulas, use Wolfram Alpha:
 # http://www.wolframalpha.com/
 
+use experimental :cached;
+
 # This function returns the nth Bernoulli number
 # See: https://en.wikipedia.org/wiki/Bernoulli_number
 sub bernoulli_number($n) is cached {
