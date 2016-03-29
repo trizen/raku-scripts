@@ -82,7 +82,7 @@ sub smart_wrap($text, $width) {
     prepare_words(@words, $width, ->($path) {
         combine($path, ->($combination) {
             my $score = 0;
-            for |$combination -> $line {
+            for $combination[0..*-2] -> $line {
                 $score += ($width - $line.chars)**2;
             }
 
