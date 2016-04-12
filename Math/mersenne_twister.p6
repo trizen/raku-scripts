@@ -15,14 +15,14 @@ class MT19937 {
     has $.prec is required;
 
     constant $l = 18;
-    constant $a = 0x9908B0DF16;
+    constant $a = 0x9908B0DF;
     constant $f = 1812433253;
     constant $u = 11;
-    constant $d = 0xFFFFFFFF16;
+    constant $d = 0xFFFFFFFF;
     constant $s = 7;
-    constant $b = 0x9D2C568016;
+    constant $b = 0x9D2C5680;
     constant $t = 5;
-    constant $c = 0xEFC6000016;
+    constant $c = 0xEFC60000;
     constant $n = 624;
     constant $m = 397;
 
@@ -33,7 +33,7 @@ class MT19937 {
         has $!decimals = 10**$!prec;
 
         for ^($n-1) -> $i {
-            @!mt[$i+1] = ($f * (@!mt[$i] +^ (@!mt[$i] +> ($!prec-2))) + $i+1);
+            @!mt[$i+1] = ($f * (@!mt[$i] +^ (@!mt[$i] +> $!prec)) + $i+1);
         }
     }
 
