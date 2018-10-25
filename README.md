@@ -5,7 +5,7 @@ Some day-to-day Perl 6 scripts which prove some ideas or implement some useful p
 # Summary
 
 * Generators
-    * [Faulhaber s formula](./Generators/faulhaber_s_formula.p6)
+    * [Faulhaber's formula](./Generators/faulhaber_s_formula.p6)
 * Math
     * [Bernoulli numbers recursive](./Math/bernoulli_numbers_recursive.p6)
     * [Mersenne twister](./Math/mersenne_twister.p6)
