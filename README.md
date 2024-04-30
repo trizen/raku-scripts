@@ -1,13 +1,13 @@
-# perl6-scripts
+# raku-scripts
 
-Some day-to-day Perl 6 scripts which prove some ideas or implement some useful practicability
+Several Raku scripts which prove some ideas or implement some useful practicability
 
 # Summary
 
 * Generators
-    * [Faulhaber's formula](./Generators/faulhaber_s_formula.p6)
+    * [Faulhaber's formula](./Generators/faulhaber_s_formula.raku)
 * Math
-    * [Bernoulli numbers recursive](./Math/bernoulli_numbers_recursive.p6)
-    * [Mersenne twister](./Math/mersenne_twister.p6)
+    * [Bernoulli numbers recursive](./Math/bernoulli_numbers_recursive.raku)
+    * [Mersenne twister](./Math/mersenne_twister.raku)
 * Text
-    * [Smart word wrap](./Text/smart_word_wrap.p6)
+    * [Smart word wrap](./Text/smart_word_wrap.raku)
